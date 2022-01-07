@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Playlist from "../Playlist/Playlist";
+import SearchBar from
 
 function App() {
   return (
