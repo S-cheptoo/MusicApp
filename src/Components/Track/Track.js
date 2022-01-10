@@ -28,12 +28,16 @@ class Track extends React.Component{
            return(
                    //adding a view action method that is going to add a button 
                 <button className="Task-action" //binding to the removetrack//
-                onClick={this.removeTrack}> - </button>
+                onClick={this.removeTrack}> 
+                - 
+                </button>
            );
         }
         return(
             <div>
-                <button className="Track-action" onClick={this.addTrack}> + </button>
+                <button className="Track-action" onClick={this.addTrack}>
+                 + 
+                </button>
             </div>
             );
     }
@@ -46,10 +50,10 @@ class Track extends React.Component{
                     <p>{this.props.track.artist} | {this.props.track.album}</p>
                     //spotify to stream that we are going to connect to
                     <iframe
-                        src={"https://open.spotify.com/embed/track" + this.props.track.id}
+                        src={"https://open.spotify.com/embed/track/" + this.props.track.id}
                         weight ="300"
                         height= "80"
-                        frameboard= "0"
+                        frameborder= "0"
                         allowTransparency="true"
                         allow="encrypted-media"
                         title="preview"
