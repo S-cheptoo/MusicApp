@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './App.css';
 
 // Importing components
@@ -96,8 +96,8 @@ function App() {
         <a href="http://localhost:3000">S.O. Music</a>
       </h1>
         <div className="App">
-          //onSearch is a custome event
-          <searchBar onSearch={this.search}/>
+          (//onSearch is a custom event)
+          <SearchBar onSearch={this.search}/>
           <div className="App-playlist">
             <SearchResults SearchResults={this.state.SearchResults} onAdd={this.doThese}/>
             <Playlist playlistTracks={this.state.playlistTracks} onChangeName={this.updatePlaylistName} onRemove={this.removeTrack} onSave={this.savePlaylist}/>
